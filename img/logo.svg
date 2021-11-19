@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="37" viewBox="0 0 92 37">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.591" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1"/>
+    </radialGradient>
+  </defs>
+  <g id="Logo-MKA_Designs" data-name="Logo-MKA Designs" transform="translate(-71 -160)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="92" height="37" transform="translate(71 160)" fill="#1e1f26"/>
+    <g id="Logo" transform="translate(73.739 165.478)">
+      <g id="Group_5" data-name="Group 5" transform="translate(59.978 -0.673)">
+        <path id="Path_1" data-name="Path 1" d="M194,269.92V242l25.166,27.92V242Z" transform="translate(-194 -242)" stroke="#ababab" stroke-width="1" fill="url(#radial-gradient)"/>
+      </g>
+      <path id="M" d="M266,254.521V242l6.26,6.26,6.26-6.26v12.521" transform="translate(-263.809 -242)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <g id="K" transform="translate(23.268 -0.313)">
+        <path id="Path_3" data-name="Path 3" d="M330,242v12.521L340.434,242" transform="translate(-330 -242)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+        <path id="Path_4" data-name="Path 4" d="M355.631,272.723,349.749,266" transform="translate(-344.533 -259.576)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      </g>
+      <path id="A" d="M394.347,246.174,386,254.521V242l12.521,12.521" transform="translate(-343.743 -242)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <text id="designs" transform="translate(0.261 27.522)" fill="#ababab" font-size="11" font-family="DomusTitlingLight, Domus Titling" letter-spacing="0.18em"><tspan x="0" y="0">designs</tspan></text>
+    </g>
+  </g>
+</svg>
