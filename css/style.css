@@ -3,6 +3,9 @@ Colors used:
 Primary Color (Midnight Blue): #1E1F26
 Secondar Color (Light Blue): #4567FF
 Text Color (White):  #FFFFFF
+Hover Color (White): #FFFFFF
+Visited Color (Light Purple): #DCA7FF
+Active color (Lightest Blue): #A7F6FF
 */
 body {
   background-color: #1E1F26;
@@ -18,8 +21,58 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.369em; font-weight: 700;
 }
-h2 {font-size: 1.777em; font-weight: 500;
+h2 {font-size: 1.777em; font-weight: 600;
 }
 
 h3 {font-size: 1.333em; font-weight: 500
+}
+img {
+  width: 100%;
+}
+a {
+  color: #4567ff;
+  text-decoration: none;
+}
+a:visited {
+  color: #a7f6ff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:active {
+  color: #a7f6ff
+}
+.button {
+  display: inline-block;
+  background-color: #4567FF;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: 2px solid #4567FF;
+  transition: 0.2s;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.button:visited {
+color: #a7f6ff;
+text-decoration: none;
+}
+.button:active {
+  color: #a7f66f;
+}
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
 }
