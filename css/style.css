@@ -1,11 +1,11 @@
 /*
 Colors used:
-Primary Color (Midnight Blue): #1E1F26
-Secondar Color (Light Blue): #4567FF
-Text Color (White):  #FFFFFF
-Hover Color (White): #FFFFFF
-Visited Color (Light Purple): #DCA7FF
-Active color (Lightest Blue): #A7F6FF
+Primary Color (Midnight Blue): #1e1f26
+Secondar Color (Light Blue): #4567ff
+Text Color (White):  #ffffff
+Hover Color (White): #ffffff
+Visited Color (Light Purple): #dca7ff
+Active color (Lightest Blue): #a7F6ff
 */
 body {
   background-color: #1E1F26;
@@ -50,7 +50,7 @@ a:active {
   background-color: #4567FF;
   color: #ffffff;
   font-weight: 500;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   border-bottom: 2px solid #4567FF;
   transition: 0.2s;
@@ -74,5 +74,83 @@ text-decoration: none;
 }
 .button.contact:hover {
   background-color: #ff7f50;
+  color: #ffffff;
+}
+/* Layout styling */
+header {
+  background-color: #1e1f26;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow:    0px 3px 5px 0px rgba(255, 255, 255, 0.75);
+  box-shadow:         0px 3px 5px 0px rgba(255, 255, 255, 0.75);
+  position: fixed;
+  width: 100%;
+  display: inline-block;
+}
+main {
+  padding-top: 133px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:  #ffffff;
+}
+nav > ul > li > a: hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+nav > ul > li > a: visited {
+color: #a7f6ff;
+}
+nav > ul > li > a: active {
+color: #a7f6ff;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#mywork, .row {
+  padding-bottom: 25px; border-bottom: 1px solid #ffffff;
+}
+#hero, #about h1 {
+  text-align: center; /* centers text */
+}
+#get_in_touch h2 {
+  text-align: center;
+}
+#copyright {
+  text-align: center;
+}
+#intro {
+  text-align: left;
+}
+span {
+  font-weight: 600
+}
+#hero {
+  background-color: #ffe4c4
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%
+}
+.logo {
+  max-width: 250px;
+  max-height: 50px;
+}
+.social_media_icons {
   color: #ffffff;
 }
