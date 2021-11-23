@@ -15,8 +15,8 @@
 
 <body>
   <header>
-    <div>
-      <img src="img/logo.svg" alt="My Logo">
+    <div class="container">
+      <img class="logo" src="img/logo.svg" alt="My Logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -29,19 +29,21 @@
   <main>
     <!-- for hero -->
     <div id="hero">
-      <div>
+      <div class="container">
         <h1>Hi, I'm Michael Akiyama.</h1>
         <span>UI Designer from the Bay Area, CA!</span>
-        <p>A continually curious creative connecting people through thoughtful digital interfaces.
-          My hospitality background and recent involvement with process improvement allow me to listen and sympathize with an open heart and mind.
-          My goal is to make user lives a bit easier with my designs.</p>
+        <div id="intro">
+          <p>A continually curious creative connecting people through thoughtful digital interfaces.
+            My hospitality background and recent involvement with process improvement allow me to listen and sympathize with an open heart and mind.
+            My goal is to make user lives a bit easier with my designs.</p>
+        </div>
       </div>
     </div>
     <!-- for work/projects -->
-    <div id="mywork">
-      <div>
+    <div>
+      <div class="container">
         <h2>My Work</h2>
-        <div>
+          <div class="row">
           <!-- open row that holds (2) columns for Artisan -->
           <div>
             <!-- open first column (used for image) -->
@@ -61,7 +63,7 @@
             <a href="artisan.html" class="button">View Project</a><!-- button -->
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for Artisan -->
-        <div>
+        <div class="row">
           <!-- open row that holds (2) columns for CG -->
           <div>
             <!-- open first column (used for image) -->
@@ -85,9 +87,11 @@
     </div>
 
     <footer id="contact">
-      <div>
+      <div class="container">
         <!-- open single column for contact info -->
-        <h2>Get in Touch</h2>
+        <div id="get_in_touch">
+          <h2>Get in Touch</h2>
+        </div>
         <p>
           <!-- open paragraph -->
           Let's talk about how I can add value to your team!
@@ -96,32 +100,12 @@
           Prefer connecting through email?
         </p><!-- close paragraph -->
         <a href="mailto:michaelakiyama@gmail.com" class="button contact">Email Me</a><!-- button -->
-        <div>
-          <!-- open Social Media Layout Placeholder -->
+        <div class="social_media_icons"><!-- open Social Media Icons -->
           <ul>
             <a href="Behance-URL">
               <!-- Behance Icon -->
-              <svg id="Layer_1" style="enable-background:new 0 0 124 124;" version="1.1" viewBox="0 0 124 124" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <style type="text/css">
-                  .st0 {
-                    fill: #333033;
-                  }
-                </style>
-                <g id="XMLID_31_">
-                  <g id="XMLID_32_">
-                    <g id="XMLID_33_">
-                      <path class="st0" d="M86.9,48.7c-20.9,0-20.9,20.8-20.9,20.9c0,0-1.4,20.8,20.9,20.8c0,0,16.8,1,18.5-12.3
-          	c0.1-1.2-0.8-2.2-1.9-2.2h-5.8c-0.8,0-1.6,0.5-1.9,1.4c-0.5,1.7-2.3,4.5-8.5,4.5c0,0-8.1,0.5-9.4-7.2c-0.2-1.2,0.7-2.2,1.9-2.2
-          	H104c1,0,1.9-0.8,1.9-1.9C106.1,64.9,105.1,48.7,86.9,48.7z M78.9,65c-0.8,0-1.3-0.7-1.1-1.5c0.8-2.4,3.1-6.9,9.2-6.9
-          	c6.3,0,7.8,4.7,8.2,7.1c0.1,0.7-0.4,1.3-1.1,1.3H78.9z M53.9,60.2c-0.7-0.2-0.8-1.2-0.1-1.5c2.3-1.2,5.1-3.8,5.1-9.4
-          	c0-9.7-6.8-14.5-15.4-14.5H16.5c-0.8,0-1.4,0.6-1.4,1.4v51.6c0,0.8,0.6,1.4,1.4,1.4h26.9c0,0,17.3,0.5,17.3-16.1
-          	C60.7,73.2,61.3,62.6,53.9,60.2z M27.5,45.5c0-0.6,0.5-1,1-1h14.8c0,0,3.8,0,3.8,5.7c0,5.7-2.3,6.5-4.8,6.5H28.6
-          	c-0.6,0-1-0.5-1-1V45.5z M42.6,79.6h-14c-0.6,0-1-0.5-1-1V66.1c0-0.6,0.5-1,1-1h14.8c0,0,5.8-0.1,5.7,7.5
-          	C49.1,78.9,44.8,79.5,42.6,79.6z M75.1,37v4.7c0,0.6,0.5,1,1,1h20.4c0.6,0,1-0.5,1-1V37c0-0.6-0.5-1-1-1H76.2
-          	C75.6,35.9,75.1,36.4,75.1,37z" id="XMLID_34_" />
-                    </g>
-                  </g>
-                </g>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32.012" height="20.204" viewBox="0 0 32.012 20.204">
+                <path data-name="Path 637" d="M30.9,6.734H22.791V8.989h8.14ZM29.188,22.247a3.566,3.566,0,0,1-2.079.592,3.566,3.566,0,0,1-2.719-.864A3.982,3.982,0,0,1,23.4,19.16H33.986a10.347,10.347,0,0,0-.272-3.2A8.124,8.124,0,0,0,32.435,13.2a6.669,6.669,0,0,0-2.271-1.935,6.989,6.989,0,0,0-3.2-.72,7.8,7.8,0,0,0-3.039.592,7.213,7.213,0,0,0-2.351,1.6,7.037,7.037,0,0,0-1.519,2.431,8.636,8.636,0,0,0-.528,3.055,8.828,8.828,0,0,0,.512,3.1,7.133,7.133,0,0,0,1.407,2.447,6.4,6.4,0,0,0,2.335,1.6,8.316,8.316,0,0,0,3.1.544,7.629,7.629,0,0,0,4.222-1.12,6.733,6.733,0,0,0,2.607-3.758H30.18a2.463,2.463,0,0,1-.992,1.215ZM23.7,15.658a2.991,2.991,0,0,1,1.6-1.823,3.646,3.646,0,0,1,1.6-.32,2.767,2.767,0,0,1,2.175.784,4.654,4.654,0,0,1,1.008,2.319H23.447a4.8,4.8,0,0,1,.176-.96Zm-8.46-.768a4.894,4.894,0,0,0,2.047-1.6,4.35,4.35,0,0,0,.688-2.527A5.246,5.246,0,0,0,17.513,8.4,3.838,3.838,0,0,0,16.2,6.8a5.182,5.182,0,0,0-2.031-.832,12.059,12.059,0,0,0-2.623-.256H2V25.829h9.756a10.475,10.475,0,0,0,2.639-.336,7.277,7.277,0,0,0,2.287-1.04,5.006,5.006,0,0,0,1.6-1.823,5.454,5.454,0,0,0,.592-2.639,5.55,5.55,0,0,0-.912-3.2,4.8,4.8,0,0,0-2.8-1.9ZM6.43,9.149h4.142a6.669,6.669,0,0,1,1.135.1,2.623,2.623,0,0,1,.976.352,1.679,1.679,0,0,1,.672.7,2.271,2.271,0,0,1,.256,1.151,2.175,2.175,0,0,1-.752,1.839,3.2,3.2,0,0,1-1.951.56H6.43Zm7.741,11.9a2.047,2.047,0,0,1-.72.8,3.2,3.2,0,0,1-1.04.416,5.326,5.326,0,0,1-1.247.128h-4.8V16.873h4.8a3.838,3.838,0,0,1,2.319.656,2.639,2.639,0,0,1,.864,2.223A2.831,2.831,0,0,1,14.171,21.048Z" transform="translate(-2 -5.709)"/>
               </svg>
             </a>
             <a href="Instagram-URL">
@@ -134,7 +118,7 @@
             </a>
             <a href="LinkedIn-URL">
               <!--LinkedIn Icon -->
-              <svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg baseProfile="tiny" height="24px" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                   <path d="M8,19H5V9h3V19z M19,19h-3v-5.342c0-1.392-0.496-2.085-1.479-2.085c-0.779,0-1.273,0.388-1.521,1.165C13,14,13,19,13,19h-3
                 c0,0,0.04-9,0-10h2.368l0.183,2h0.062c0.615-1,1.598-1.678,2.946-1.678c1.025,0,1.854,0.285,2.487,1.001   C18.683,11.04,19,12.002,19,13.353V19z" />
@@ -145,8 +129,8 @@
               </svg>
             </a>
           </ul>
-          <div>
-            <!-- open copyright -->
+        </div><!-- close Social Media Icons -->
+          <div id="copyright"><!-- open copyright -->
             <p>Copyright Michael Akiyama 2021</p>
           </div><!-- close copyright -->
         </div><!-- end single column for contact info -->
