@@ -21,10 +21,14 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.369em; font-weight: 700;
 }
-h2 {font-size: 1.777em; font-weight: 600;
+h2 {
+  font-size: 1.777em; font-weight: 600;
 }
-
-h3 {font-size: 1.333em; font-weight: 500
+h3 {
+  font-size: 1.333em; font-weight: 500;
+}
+span {
+  font-size: 1.777em;
 }
 img {
   width: 100%;
@@ -129,7 +133,7 @@ nav {
 #hero, #about h1 {
   text-align: center; /* centers text */
 }
-#get_in_touch h2 {
+#get_in_touch, #my_work h2 {
   text-align: center;
 }
 #copyright {
@@ -148,9 +152,48 @@ span {
   width: 100%
 }
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   max-height: 50px;
 }
-.social_media_icons {
+.sm_icons {
   color: #ffffff;
+  text-align: center;
+}
+/*Medium devices (640px and larger)*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 13px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+/*Large devices (1024px or larger) */
+@media only screen and (mid-width: 1024px) {
+
+}
+/*X-large devices (1440px or larger)*/
+@media only screen and (min-width: 1440px) {
+
 }
