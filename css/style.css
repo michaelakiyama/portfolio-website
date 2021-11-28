@@ -57,11 +57,10 @@ a:active {
   padding: 8px;
   border-radius: 10px;
   border-bottom: 2px solid #4567FF;
-  transition: 0.2s;
+  transition: 0.3s opacity;
 }
 .button:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+  opacity: 0.75;
 }
 .button:visited {
 color: #a7f6ff;
@@ -80,6 +79,29 @@ text-decoration: none;
   background-color: #ff7f50;
   color: #ffffff;
 }
+/* CSS Animation */
+@keyframes color-change{
+  from {fill: #ecd655;}
+  to {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /* Layout styling */
 header {
   background-color: #1e1f26;
@@ -159,11 +181,17 @@ span {
   color: #ffffff;
   text-align: center;
 }
+#lets_talk {
+  text-align: center;
+}
 /*Medium devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+  body {
+    font-size: 18px;
   }
   nav {
     width: auto;
@@ -190,8 +218,23 @@ span {
   }
 }
 /*Large devices (1024px or larger) */
-@media only screen and (mid-width: 1024px) {
-
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+#me {
+  max-width: 1000;
+  margin-right: auto;
+  margin-left: auto;
+  }
 }
 /*X-large devices (1440px or larger)*/
 @media only screen and (min-width: 1440px) {
