@@ -184,6 +184,13 @@ span {
 #lets_talk {
   text-align: center;
 }
+.col-md-6 {
+  width: 50%;
+  float: left;
+}
+.sm_icons2 {
+  padding: 20px;
+}
 /*Medium devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
   header {
@@ -206,7 +213,6 @@ span {
   }
   [class*="col-"] {
     float: left;
-    padding: 0 10px;
   }
   .row::after {
     content: "";
@@ -220,10 +226,14 @@ span {
 /*Large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 58.33%;
+    width: 45%;
+    margin: 15px;
   }
-  .col-lg-5 {
-    width: 41.66%;
+  .col-lg-6 {
+    width: 50%;
+  }
+  .colu-md-5 {
+    float: left;
   }
 .container {
   max-width: 1200px;
@@ -231,9 +241,7 @@ span {
   margin-left: auto;
   }
 #me {
-  max-width: 1000;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1100px;
   }
 }
 /*X-large devices (1440px or larger)*/
