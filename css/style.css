@@ -105,7 +105,6 @@ text-decoration: none;
 /* Layout styling */
 header {
   background-color: #1e1f26;
-  text-align: center;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(255, 255, 255, 0.75);
   -moz-box-shadow:    0px 3px 5px 0px rgba(255, 255, 255, 0.75);
   box-shadow:         0px 3px 5px 0px rgba(255, 255, 255, 0.75);
@@ -120,9 +119,7 @@ nav > ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -181,12 +178,8 @@ span {
   color: #ffffff;
   text-align: center;
 }
-#lets_talk {
+#lets_talk, #get_in_touch {
   text-align: center;
-}
-.col-md-6 {
-  width: 50%;
-  float: left;
 }
 .sm_icons2 {
   padding: 20px;
@@ -200,6 +193,9 @@ span {
   body {
     font-size: 18px;
   }
+  nav > ul > li {
+    display: inline-block;
+  }
   nav {
     width: auto;
     float: right;
@@ -211,6 +207,7 @@ span {
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
   }
@@ -226,14 +223,8 @@ span {
 /*Large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 45%;
+    width: 40%;
     margin: 15px;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .colu-md-5 {
-    float: left;
   }
 .container {
   max-width: 1200px;
@@ -241,7 +232,10 @@ span {
   margin-left: auto;
   }
 #me {
-  max-width: 1100px;
+  max-width: 1000px;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
   }
 }
 /*X-large devices (1440px or larger)*/
