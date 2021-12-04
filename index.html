@@ -11,19 +11,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c1b6a5d146.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <img class="logo" src="img/logo.svg" alt="My Logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -67,7 +72,7 @@
         </div><!-- end row that holds (2) columns for Artisan -->
         <div class="row">
           <!-- open row that holds (2) columns for CG -->
-          <div class="column col-md-6 col-lg-7">
+          <div class="col-md-6 col-lg-7">
             <!-- open first column (used for image) -->
             <picture>
               <source srcset="img/corner_grocer/homepage@1.jpg" media="(max-width:767px)">
@@ -87,7 +92,7 @@
         </div><!-- end row that holds (2) columns for CG -->
         <div class="row">
           <!-- open row that holds (2) columns for CSS Animation -->
-          <div class="column col-md-6 col-lg-7">
+          <div class="col-md-6 col-lg-7">
             <!-- open first column (used for image) -->
               <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
