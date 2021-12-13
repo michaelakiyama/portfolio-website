@@ -111,13 +111,15 @@ header {
   position: fixed;
   width: 100%;
   display: inline-block;
+  padding: 10px 0 4px;
 }
 main {
-  padding-top: 133px;
+  padding-top: 70px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -136,9 +138,38 @@ color: #a7f6ff;
 nav > ul > li > a: active {
 color: #a7f6ff;
 }
-nav {
-  display: inline-block;
-  width: 100%;
+/* Hid all but hamburger menu icon */
+.navtoggle li:not(:last-child){
+  display: none;
+}
+/* Start: Put hamburger menu to the right */
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+/* End: Put hamburger menu to the right */
+.navtoggle li .icon {
+  padding: 0;
+}
+.navtoggle.responsive li {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(100,100,100,100);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 .container {
   padding: 0 15px;
@@ -190,17 +221,30 @@ span {
     text-align: unset;
     padding: 20px 0 13px;
   }
+  main {
+    padding-top: 133px;
+  }
   body {
     font-size: 18px;
   }
   nav > ul > li {
     display: inline-block;
   }
+  nav > ul {
+    margin: 1em 0;
+  }
   nav {
     width: auto;
     float: right;
     margin-top: 13px;
   }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
+  }
+
   body {
     font-size: 18px;
   }
@@ -222,6 +266,7 @@ span {
 }
 /*Large devices (1024px or larger) */
 @media only screen and (min-width: 1024px) {
+
   .col-lg-7 {
     width: 40%;
     margin: 15px;
